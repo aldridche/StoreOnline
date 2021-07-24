@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <link rel="shortcut icon" href="img/StoreOnline.png" type="image/x-icon">
+        <title>Store Online</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,17 +28,18 @@
     <body>
         <div id="barraNav">
         @if (Route::has('login'))
-            <ul class="derecha nav nav-tabs">
+        <img src="img/StoreOnline.png" alt="" width="3%" height="2%">
+            <ul class="derechaHead nav nav-tabs">
                 @auth
-                    <li class="derecha nav-item">
+                    <li class="derechaHead nav-item">
                         <a href="{{ url('/dashboard') }}" class="nav-link active" aria-current="page">Dashboard</a>
                     </li>
                 @else
-                    <li class="derecha nav-item">
+                    <li class="derechaHead nav-item">
                         <a href="{{ route('login') }}" class="nav-link text-gray-700">Log in</a>
                     </li>
                     @if(Route::has('register'))
-                        <li class="derecha nav-item">
+                        <li class="derechaHead nav-item">
                             <a href="{{ route('register') }}" class="nav-link text-gray-700">Register</a>
                         </li>
                     @endif
@@ -62,6 +64,15 @@
                 </div>
             @endif
             </div-->
+            <section>
+                <article class="izquierda">hola</article>
+                <aside class="derechaBody">
+                    <img src="img/StoreOnline.png" alt="StoreOnline.png" width="50%" heigth="50%">
+                </aside>
+            </section>
+            <section></section>
+            <section></section>
+            <footer></footer>
             <div>
                 <div id="dividir"><h1>hola</h1></div>
                 <div id="dividir"><h1>hola</h1></div>
