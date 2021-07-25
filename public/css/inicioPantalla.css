@@ -4,37 +4,65 @@
     height: 20%;
     border: 1px solid #CCC;
     background-color: #E0E0E0;
-    padding: .5em;
+    padding: auto;
     overflow: hidden;
 }
+#LogoHor{
+    width: 12%;
+    padding: 0.5%;
+    padding-left: 1%;
+}
 .derechaHead{
+    margin-top: 0.5%;
     float: right;
 }
 /* cierra estilos del header*/
 /*Cuerpo de pagina*/
-.izquierda{
-    width: 50%;
+.Primero{
+    width: 100%;
+    height: 400px;
+    /* F6B352, #F68657 */
+    background: linear-gradient(to top right, #F68657, #F6B352,#fbc880, #F6B352,#F68657) ;
+    color: #F68657;
+
+}
+
+.centrado{
+    width: 25%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #383A3F;
+    border-radius: 1px #F68657 solid;
+    color: white;
+}
+
+.izquierda{
+    width: 45%;
+    height: 100%;
+    margin-left: 5%;
     padding: 1%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: left;
-    text-align: justify;
+    display: table; /*Relacion de padre con su hijo contenedor*/
+}
+.contenedor{
+    display: table-cell;
+    vertical-align: middle;
 }
 .derechaBody{
-    width: 50%;
-    height: auto;
-    padding: 1%;
+    width: 45%;
+    height: 100%;
+    margin-right: 5%;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: right;
 }
 
-
-
-
-
-
-#dividir{
+/* #dividir{
     width: 45%;
     height: auto;
     border: 1px solid black;
@@ -44,10 +72,37 @@
     display: inline-block;
     text-align: center;
 
-}
-h1{
-    color: tomato;
-}
+} */
+
 /*cierra cuerpo de pagina*/
 /* estilos del footer */
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #E0E0E0;
+    text-align: center;
+}
+.izqFoot{
+    width: 33%;
+    height: auto;
+    border: #383A3F solid 1px;
+    margin-left: 0.5%;
+    padding: 2%;
+    float: left;
+}
+.cenFoot{
+    width: 33%;
+    height: auto;
+    border: #383A3F solid 1px;
+    float: left;
+    padding: 2%;
+}
+.derFoot{
+    width: 33%;
+    height: auto;
+    border: #383A3F solid 1px;
+    margin-right: 0.5%;
+    float: right;
+    padding: 2%;
+}
 /* cierra estilos del footer */
